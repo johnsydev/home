@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#074656, #157f9a);
+}
+
+#header {
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(#143943, #0d4857);
+    color: white;
+    letter-spacing: 3px;
+    font-family: Georgia;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+@keyframes titleMovement {
+  0% {transform: translateY(0);}
+  30% {transform: translateY(-5px);}
+  70% {transform: translateY(5px);}
+  100% {transform: translateY(0);}
+}
+
+#header h1 {
+    animation: titleMovement 2s ease-in-out infinite;
+}
+
+
+#sobremi {
+    position: relative;
+    margin: 100px 3% 10px;
+    color: black;
+    border-radius: 15px;
+    background-color: #bcf2ff;
+}
+
+
+#sobremi h2 {
+    
+    border-bottom: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+#sobremi ul {
+    padding-top: 10px;
+    list-style: none;
+}
+
+#sobremi ul li {
+    padding: 0 0 10px 10px;
+}
+
+
+#titlelinks {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px 0 0;
+    margin: 15px 0;
+}
+
+.card {
+    margin: 10px 3%;
+    border-radius: 8px;
+    background-color: #cef3fd;
+    text-align: center;
+}
+
+.card:hover {
+    margin: 12px 2%;
+}
+
+.card h2 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.card p {
+    padding: 3px 8px 12px;
+    font-size: 15px;
+    color: #5b5b5b;
+}
+
+.button-section {
+    background: linear-gradient(#ad5a16, #b21894);
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.button-section a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    bottom: 0;
+    margin: auto 0 0;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
