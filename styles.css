@@ -11,13 +11,10 @@ body {
 }
 
 #header {
-    font-size: 150%;
-    padding: 20px 0;
     text-align: center;
     background: linear-gradient(#143943, #0d4857);
     color: white;
     letter-spacing: 3px;
-    font-family: Georgia;
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,12 +25,15 @@ body {
 
 @keyframes titleMovement {
   0% {transform: translateY(0);}
-  30% {transform: translateY(-5px);}
-  70% {transform: translateY(5px);}
+  30% {transform: translateY(-10px);}
+  70% {transform: translateY(10px);}
   100% {transform: translateY(0);}
 }
 
 #header h1 {
+    font-size: 150%;
+    padding: 20px 0;
+    font-family: Georgia;
     animation: titleMovement 2s ease-in-out infinite;
 }
 
