@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #06360a;
+    text-align: center;
+    padding: 2em 0;
+    color: white;
+}
+
+#back-home {
+    margin: 10px 0 1em 20px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#back-home a {
+    text-decoration: none;
+}
+
+.proyect {
+    margin: 1em;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.proyect h3 {
+    text-align: center;
+    padding: 10px;
+}
+.proyect p {
+    padding: 5px 0;
+}
+
+i {
+    padding: 0 5px 0 0;
+}
+
+select {
+    float: right;
+    margin-right: 1em;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Contacto - JohnsyDev</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+        <link rel="stylesheet" href="contactcss.css" type="text/css" media="all" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+    <body>
+        <div id="principal">
+        <div id="h1"><h1><i class="fas fa-comments"></i>Contácteme</h1></div>
+        <form onsubmit="displaySended()" id="form" action="" method="POST"  accept-charset="utf-8">
+            
+        <i class="fas fa-at"></i><label for="email">Su correo electrónico</label><br />
+            <input class="inputs" type="email" name="email" id="email" placeholder="juan@example.com" value="" maxlength="50" autofocus required/>
+            
+            <i id="icon-subject" class="fas fa-edit"></i> <label for="subject">Asunto</label><br />
+            <input class="inputs" type="text" name="subject" id="subject" placeholder="Pedido sobre..." value="" maxlength="50" required/>
+            
+            <i class="far fa-sticky-note"></i><label for="text">Descripción</label> <br />
+            <textarea class="inputs" name="text" id="text" rows="8" cols="40" placeholder="Quisiera..."></textarea>
+            
+            <button class="inputs" type="submit" name="submit" id="submit" value="" required="">
+                    <i class="far fa-paper-plane"></i>Enviar
+                </button>
+        </form>
+        </div>
+        
+        
+        <div name="sended" id="sended" style="width: 100%; margin: 70% 0 0; display: inline; align-items: center; text-align: center;">
+            <br />
+            <h2>Enviado</h2>
+            <i style="margin: 1.5em 0 0 0; font-size: 40px" class="fas fa-check"></i>
+        </div>
+        
+        <p id="back-home">
+            <a id="" href="https://johnsydev.github.io/home"><i class="fas fa-home"></i>Volver al inicio</a>
+        </p>
+        
+        
+        <script type="text/javascript" charset="utf-8">
+            var pri = document.getElementById("principal");
+            var sended = document.getElementById("sended");
+            
+            sended.style.display = "none";
+            function displaySended() {
+                sended.style.display = "block";
+                pri.style.display = "none";
+            }
+            
+            function test() {
+                
+            }
+        </script>
+        
+    </body>
+</html>

@@ -2,25 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: Arial;
+    color: black;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(#074656, #157f9a);
 }
 
 #header {
+    background-color: #06360a;
     text-align: center;
-    background: linear-gradient(#143943, #0d4857);
+    padding: 2em 0;
+}
+
+header h1 {
     color: white;
-    letter-spacing: 3px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999;
-    height: 10%;
-    display: inline;
 }
 
 @keyframes titleMovement {
@@ -30,20 +27,13 @@ body {
   100% {transform: translateY(0);}
 }
 
-#header h1 {
-    font-size: 150%;
-    padding: 20px 0;
-    font-family: Georgia;
-    animation: titleMovement 2s ease-in-out infinite;
-}
-
 
 #sobremi {
     position: relative;
-    margin: 35% 3% 20px;
-    color: black;
+    margin: 1em 3% 20px;
+    color: #d2e9f7;
     border-radius: 15px;
-    background-color: #bcf2ff;
+    background-color: #d2e9f7;
 }
 
 
@@ -67,14 +57,15 @@ body {
     border-top: 1px solid black;
     text-align: center;
     padding: 25px 0 0;
-    margin: 15px 0;
+    margin: 15px 0 25px;
 }
 
 .card {
     margin: 5% 3%;
     border-radius: 8px;
-    background-color: #cef3fd;
     text-align: center;
+    border: 1px solid black;
+    background-color: #d2e9f7;
 }
 
 .card:hover {
@@ -82,8 +73,9 @@ body {
 }
 
 .card h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 0;
+    color: #06360a;
 }
 
 .card p {
@@ -114,4 +106,8 @@ footer {
     text-align: center;
     color: white;
     font-size: 10px;
+}
+
+i {
+    padding: 0 8px 0 0;
 }
